@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>@ASSEMBLY_TITLE@</RootNamespace>
+    <AssemblyName>@ASSEMBLY_TITLE@</AssemblyName>
+    <TargetFrameworks>net451</TargetFrameworks>
+    <BaseOutputPath>@CMAKE_RUNTIME_OUTPUT_DIRECTORY@/cs</BaseOutputPath>
+    <TEST_API_DLL/>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(TEST_API_DLL)">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
